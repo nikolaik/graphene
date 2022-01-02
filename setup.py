@@ -54,7 +54,7 @@ tests_require = [
     "coveralls>=1.11,<2",
     "promise>=2.3,<3",
     "mock>=4.0,<5",
-    "pytz==2019.3",
+    "pytz==2021.1",
     "iso8601>=0.1,<2",
 ]
 
@@ -82,9 +82,9 @@ setup(
     keywords="api graphql protocol rest relay graphene",
     packages=find_packages(exclude=["examples*"]),
     install_requires=[
-        "graphql-core>=3.1.2,<4",
+        "graphql-core~=3.1.2",
         "graphql-relay>=3.0,<4",
-        "aniso8601>=8,<9",
+        "aniso8601>=8,<10",
     ],
     tests_require=tests_require,
     extras_require={"test": tests_require, "dev": dev_requires},
